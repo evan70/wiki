@@ -1,12 +1,14 @@
 <?php
-
+namespace wiki;
 /**
  * Fields:
  *
  * id
  * body
  */
-class Wiki extends Model {
+class Wiki extends \Model {
+	public $table = '#prefix#wiki';
+	public $key = 'id';
 	/**
 	 * Generate a list of pages for the sitemaps app.
 	 */
