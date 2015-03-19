@@ -13,8 +13,9 @@ class Wiki extends \Model {
 	 * Generate a list of pages for the sitemaps app.
 	 */
 	public static function sitemap () {
-		$res = self::query ('id')
+		$res = self::query ()
 			->order ('id asc')
+			->order ('link_title asc')
 			->fetch_orig ();
 		
 		$urls = array ();
