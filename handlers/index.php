@@ -50,7 +50,7 @@ if ($wiki->error || (isset ($this->params[1]) && $this->params[1] == 'edit')) {
 	} else {
 		$o = new StdClass;
 		$o->dashed = $id;
-		$o->id = $title;
+		$o->id = $id;
 		$o->link_title = $wiki->link_title;
 		$o->body = $wiki->body;
 		$o->failed = $f->failed;
