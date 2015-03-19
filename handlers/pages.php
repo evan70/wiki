@@ -1,7 +1,8 @@
 <?php
 
-$res = Wiki::query ('id')
+$res = Wiki::query ()
 	->order ('id asc')
+	->order ('link_title asc')
 	->fetch_orig ();
 
 if (! $this->internal) {
@@ -11,7 +12,11 @@ if (! $this->internal) {
 
 echo '<p>';
 foreach ($res as $pg) {
-	printf ('<a href="/wiki/%s">%s</a><br />', $pg->id, str_replace ('-', ' ', $pg->id));
+	printf (
+	'<a href="/wiki/%s">%s</a><br />',
+	$pg->id,
+	$pg->link_title
+	);
 }
 echo '</p>';
 
