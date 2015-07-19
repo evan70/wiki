@@ -14,3 +14,5 @@ Features include:
 * Internal links via [[page name]]
 * Code syntax highlighting
 * Member or admin-only edit levels
+
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/evan70/wiki?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
